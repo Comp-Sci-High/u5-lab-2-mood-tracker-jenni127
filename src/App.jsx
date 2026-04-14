@@ -1,32 +1,42 @@
 import "./App.css";
 
-// 3. import useState from react
 
+// 3. import useState from react
+import {useState} from 'react';
 
 function App() {
   // 4. Create useState variables for mood called mood and setMood, make the default "Tired"
+  const [mood,setMood] = useState("tired")
 
 
 
   // 5. Create useState variables for energy called energy and setEnergy, make the default 3
-
+  const [energy, setEnergy] = useState(3)
 
 
   // 6. Create useState variables for school mode called schoolMode and setSchoolMode, make the default true
-
+  const [schoolMode, setSchoolMode] = useState(true)
 
   // 7. Create a function called handleHappy
   // When the function runs:
   // - change mood to "Happy"
   // - show an alert about your mood improving
+function handleHappy()[
+  setMood("Happy")
+  alert("your mood is improving")
 
+]
 
 
   // 8. Create a function called handleEnergyUp
   // When the function runs:
   // - increase energy by 1
   // - show an alert about your energy rising
+function handleEnergyUp()[
+  setEnergy(energy + 1)
+  alert("your energy is rising")
 
+]
 
 
   // 9. Create a function called handleReset
@@ -35,13 +45,21 @@ function App() {
   // - reset energy back to 3
   // - reset schoolMode back to true
   // - show an alert that everything has been reset
+function handleReset()[
+  setMood("tired")
+  setEnergy(3)
+  setSchoolMode(true)
+  alert("everything has been reset")
 
+]
 
 
   // 10. Create a function called handleSchoolMode
   // When the function runs:
   // - switch schoolMode between true and false
-
+function handleSchoolMode()[
+  setSchoolMode=(schoolMode)
+]
 
 
   return (
